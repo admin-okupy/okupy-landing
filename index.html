@@ -32,8 +32,30 @@
         <h1>Okupy</h1>
         <h4>🚀 Coming soon! 🚀</h4>
         <br />
-        <button type="button" id="login_btn" class="btn btn-warning"
-            onclick="login_redirect()">Log in</button>
+
+        <p>Interested in signing up to join our beta testing platform?
+            <br />
+           Enter your email below and you'll hear back from us soon!
+        </p>
+    
+        <form class="signup-form" action="https://formsubmit.co/admin@okupy.io" method="POST" autocomplete="off">
+            <div class="mb-3">
+              <!-- <label for="email-input" class="form-label">Email address</label> -->
+              <input type="email" name="email" class="form-control" id="email-input" aria-describedby="emailHelp"
+              placeholder="Enter your email address..." 
+              required>
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" 
+              name="_autoresponse" 
+              value="Thank you for your interest in beta testing our app! 
+              We'll get back to you soon. 😊">             
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <button type="submit" class="btn btn-light">Submit</button>
+            <!-- <button type="button" id="login_btn" class="btn btn-warning"
+            onclick="login_redirect()">Log in</button> -->
+        </form>
+        <br />
 
       </div>
 
@@ -65,3 +87,4 @@ crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
 integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" 
 crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
